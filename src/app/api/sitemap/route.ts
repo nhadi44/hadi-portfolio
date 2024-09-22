@@ -1,5 +1,5 @@
 export async function GET() {
-  const baseUrl = "https://www.example.com";
+  const baseUrl = "https://www.hadinurhidayat.cloud";
   const pages = [
     { path: "/", lastmod: "2024-09-22", changefreq: "daily", priority: "1.0" },
     // {
