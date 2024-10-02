@@ -1,19 +1,8 @@
-import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import localFont from "next/font/local";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Metadata } from "next";
+import { DefaultLayout } from "./components/layouts/default";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Hadi Nurhidayat - Web Developer & Tech Enthusiast",
@@ -32,13 +21,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/assets/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/assets/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/assets/favicon/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+      <DefaultLayout>
         <SpeedInsights />
         <Analytics />
         {children}
-      </body>
+      </DefaultLayout>
     </html>
   );
 }
