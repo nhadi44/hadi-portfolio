@@ -26,7 +26,7 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
     setLastScrollY(offset);
 
     let currentSection = "";
-    sections.forEach((section: any) => {
+    sections.forEach((section) => {
       const sectionElement = document.getElementById(section);
       if (sectionElement) {
         const rect = sectionElement.getBoundingClientRect();
