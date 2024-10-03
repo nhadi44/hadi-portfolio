@@ -1,16 +1,17 @@
-import React from "react";
-import { Hero } from "./components/hero";
+import React from 'react';
+import { About } from './components/about';
+import { Hero } from './components/hero';
 
 export default function Home(): React.ReactElement {
   return (
     <>
       <section className="h-screen pt-[3rem]" id="home">
-        <div className="h-[calc(100vh-3rem)] max-w-[90%] mx-auto p-10 flex items-center">
+        <div className="h-[calc(100vh-3rem)] max-w-[90%] mx-auto p-10">
           <Hero />
         </div>
       </section>
       <section className="h-screen" id="about">
-        <h1>About Me</h1>
+        <About />
       </section>
       <section className="h-screen" id="portfolio">
         <h1>Portfolio</h1>

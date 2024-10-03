@@ -1,17 +1,17 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
-import { DefaultLayout } from "./components/layouts/default";
-import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import type { Metadata } from 'next';
+import { DefaultLayout } from './components/layouts/default';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Hadi Nurhidayat - Web Developer & Tech Enthusiast",
+  title: 'Hadi Nurhidayat - Web Developer & Tech Enthusiast',
   description:
     "Welcome to Hadi Nurhidayat's site, where you can find insights on web development, the latest technology trends, and valuable tips to enhance your coding skills.",
   keywords:
-    "Hadi Nurhidayat, web developer, technology, coding tips, tutorials, JavaScript, React, Next.js",
-  authors: [{ name: "Hadi Nurhidayat" }],
-  robots: "index, follow",
+    'Hadi Nurhidayat, web developer, technology, coding tips, tutorials, JavaScript, React, Next.js',
+  authors: [{ name: 'Hadi Nurhidayat' }],
+  robots: 'index, follow',
 };
 
 export default function RootLayout({

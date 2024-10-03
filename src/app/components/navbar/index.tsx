@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { NavbarMenu } from "./navbarMenu";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { NavbarMenu } from './navbarMenu';
 
 type NavbarProps = {
   DarkMode: boolean;
@@ -11,11 +11,11 @@ type NavbarProps = {
 export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    const sections = ["home", "about", "portfolio", "contact"];
+    const sections = ['home', 'about', 'portfolio', 'contact'];
 
     if (offset > lastScrollY && offset > 100) {
       setScrolled(false);
@@ -25,7 +25,7 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
 
     setLastScrollY(offset);
 
-    let currentSection = "";
+    let currentSection = '';
     sections.forEach((section) => {
       const sectionElement = document.getElementById(section);
       if (sectionElement) {
@@ -40,12 +40,12 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
   useEffect(() => {
-    console.log("current scroll", lastScrollY);
+    console.log('current scroll', lastScrollY);
     if (lastScrollY === 0) {
       setScrolled(true);
     }
@@ -54,12 +54,10 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
   return (
     <header
       className={`fixed w-full transition-all duration-300 ease-in-out z-50 ${
-        scrolled ? "translate-y-0" : "-translate-y-full"
-      } dark:bg-slate-950 bg-white dark:text-white text-slate-900 shadow-lg`}
-    >
+        scrolled ? 'translate-y-0' : '-translate-y-full'
+      } dark:bg-slate-950 bg-white dark:text-white text-slate-900 shadow-lg`}>
       <nav
-        className={`h-[4rem] flex items-center justify-between px-4 py-8 max-w-[90%] mx-auto `}
-      >
+        className={`h-[4rem] flex items-center justify-between px-4 py-8 max-w-[90%] mx-auto `}>
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/assets/favicon/favicon-32x32.png"

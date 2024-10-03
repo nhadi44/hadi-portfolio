@@ -1,7 +1,15 @@
+import Image from 'next/image';
+
 export const HeroRightContent = () => {
   return (
-    <div className="bg-blue-500 col-span-6">
-      <h1>Right Content</h1>
+    <div className="col-span-6 flex flex-col justify-center items-center">
+      <Image
+        src={'/assets/images/svg/hero_image.svg'}
+        width={700}
+        height={700}
+        alt="Hero Image"
+        unoptimized
+      />
     </div>
   );
 };

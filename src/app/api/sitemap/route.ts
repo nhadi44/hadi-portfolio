@@ -1,7 +1,12 @@
 export async function GET() {
-  const baseUrl = "https://www.hadinurhidayat.cloud";
+  const baseUrl = 'https://www.hadinurhidayat.cloud';
   const pages = [
-    { path: "/", lastmod: "2024-09-22", changefreq: "daily", priority: "1.0" },
+    {
+      path: '/',
+      lastmod: '2024-09-22',
+      changefreq: 'daily',
+      priority: '1.0',
+    },
     // Tambahkan halaman lain jika perlu
   ];
 
@@ -17,12 +22,12 @@ export async function GET() {
                     <priority>${priority}</priority>
                 </url>`;
           })
-          .join("")}
+          .join('')}
     </urlset>`;
 
   return new Response(sitemap, {
     headers: {
-      "Content-Type": "application/xml",
+      'Content-Type': 'application/xml',
     },
   });
 }
