@@ -1,7 +1,14 @@
+@import "swiper/swiper-bundle.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.progress-color {
+  @apply text-red-500 dark:text-red-800 mb-6;
 }

@@ -10,7 +10,7 @@ export default function Home(): React.ReactElement {
           <Hero />
         </div>
       </section>
-      <section className="h-screen" id="about">
+      <section className="bg-slate-50 dark:bg-slate-800" id="about">
         <About />
       </section>
       <section className="h-screen" id="portfolio">

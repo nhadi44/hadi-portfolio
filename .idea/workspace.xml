@@ -5,39 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0320e36-7fa7-4385-b08b-8f5b75bb1948" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hadi-portfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/about/aboutLeftContent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/about/aboutRightContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/about/connectWithMe.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/laravel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nextjs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nodejs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nuxtjs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/facebook.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/github.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/instagram.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/linkedin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/docker.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/jira.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/oracle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/prismajs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/sequelize.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/vscode.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicon/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/favicon/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/svg/hero_image.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/svg/hero_image.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/page.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/page.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/sitemap/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/sitemap/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/testing/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/testing/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/heroLeftContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/heroLeftContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/heroRightContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/heroRightContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/icons/dark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/icons/dark.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/icons/sun.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/icons/sun.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/layouts/default.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/layouts/default.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbarMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbarMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/about/aboutLeftContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/aboutLeftContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/about/aboutRightContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/aboutRightContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/about/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/prisma.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/prisma.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vitest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vitest.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +46,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -71,23 +64,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/personal/app/hadi-portfolio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\personal\\app\\hadi-portfolio&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\personal\\app\\hadi-portfolio\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/personal/app/hadi-portfolio",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\personal\\app\\hadi-portfolio",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "D:\\personal\\app\\hadi-portfolio\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -106,10 +99,16 @@
       <updated>1727924252059</updated>
       <workItem from="1727924252543" duration="1195000" />
       <workItem from="1727936906179" duration="1921000" />
+      <workItem from="1728010741271" duration="131000" />
+      <workItem from="1728010900385" duration="7997000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
