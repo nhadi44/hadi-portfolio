@@ -1,6 +1,7 @@
 import React from 'react';
 import { About } from './components/about';
 import { Hero } from './components/hero';
+import { Portfolio } from './components/portfolio';
 
 export default function Home(): React.ReactElement {
   return (
@@ -13,8 +14,8 @@ export default function Home(): React.ReactElement {
       <section className="bg-slate-50 dark:bg-slate-800" id="about">
         <About />
       </section>
-      <section className="h-screen" id="portfolio">
-        <h1>Portfolio</h1>
+      <section className="bg-slate-100 dark:bg-slate-600" id="portfolio">
+        <Portfolio />
       </section>
       <section className="h-screen" id="contact">
         <h1>Contact</h1>
