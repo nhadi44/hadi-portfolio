@@ -100,6 +100,7 @@ export const DefaultLayout = ({
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedMode = localStorage.getItem('theme');
+
       if (storedMode) {
         setDarkMode(storedMode === 'dark');
       } else {
@@ -120,8 +121,7 @@ export const DefaultLayout = ({
 
   return (
     <body
-      className={`${poppins.className} antialiased
-        ${darkMode ? 'dark' : 'light'}`}>
+      className={`${poppins.className} antialiased ${darkMode ? 'dark' : 'light'}`}>
       <div className="dark:bg-slate-900 dark:text-white transition-all duration-500 min-h-screen">
         <Navbar NightModeToggle={toggleDarkMode} DarkMode={darkMode} />
         <main>{children}</main>

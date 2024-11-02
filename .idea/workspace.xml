@@ -5,29 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0320e36-7fa7-4385-b08b-8f5b75bb1948" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/components/about/connectWithMe.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/laravel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nextjs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nodejs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/frameworks/nuxtjs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/facebook.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/github.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/instagram.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/social-media/linkedin.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/docker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/jira.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/oracle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/prismajs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/sequelize.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/icons/tools/vscode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/contactMe/formGetInTouch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/envelope.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/icons/mapPin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/partials/timeline/timelineItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/aboutLeftContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/aboutLeftContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/aboutRightContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/aboutRightContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/about/frameworkAndTools.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/frameworkAndTools.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/layouts/default.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/layouts/default.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/navbar/navbarMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/navbar/navbarMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/portfolio/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/portfolio/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/portfolio/portfolioCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/portfolio/portfolioCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +41,7 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -64,28 +57,28 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/personal/app/hadi-portfolio",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\personal\\app\\hadi-portfolio",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "D:\\personal\\app\\hadi-portfolio\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/app/hadi-portfolio&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\personal\\app\\hadi-portfolio&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\app\\hadi-portfolio\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
-        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
       </set>
     </attachedChunks>
   </component>
@@ -101,6 +94,18 @@
       <workItem from="1727936906179" duration="1921000" />
       <workItem from="1728010741271" duration="131000" />
       <workItem from="1728010900385" duration="7997000" />
+      <workItem from="1729844833777" duration="13000" />
+      <workItem from="1730272352596" duration="125000" />
+      <workItem from="1730272497522" duration="2139000" />
+      <workItem from="1730274940303" duration="1363000" />
+      <workItem from="1730446625091" duration="126000" />
+      <workItem from="1730446761235" duration="147000" />
+      <workItem from="1730446920302" duration="2455000" />
+      <workItem from="1730480831488" duration="348000" />
+      <workItem from="1730481282466" duration="287000" />
+      <workItem from="1730481594093" duration="1189000" />
+      <workItem from="1730561014499" duration="4090000" />
+      <workItem from="1730565291491" duration="295000" />
     </task>
     <servers />
   </component>

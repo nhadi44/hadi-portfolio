@@ -44,11 +44,20 @@ export const NavbarMenu = ({
       </li>
       <li>
         <Link
+          href={'#experience'}
+          className={
+            ActiveSection === 'experience' ? 'text-blue-400 font-semibold' : ''
+          }>
+          My Experience
+        </Link>
+      </li>
+      <li>
+        <Link
           href={'#contact'}
           className={
             ActiveSection === 'contact' ? 'text-blue-400 font-semibold' : ''
           }>
-          Contact
+          Contact Me
         </Link>
       </li>
       <li>

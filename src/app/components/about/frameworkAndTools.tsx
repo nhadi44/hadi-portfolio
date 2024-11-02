@@ -22,7 +22,7 @@ import { VscodeIcon } from '../icons/tools/vscode';
 export const FrameworksAndTools: React.FC = () => {
   return (
     <>
-      <h1 className="text-center mb-20 font-semibold text-blue-500 text-xl">
+      <h1 className="text-center mb-20 font-semibold text-blue-500 text-xl uppercase">
         Frameworks & Tools
       </h1>
       <Swiper

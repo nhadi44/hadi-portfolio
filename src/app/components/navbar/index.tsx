@@ -15,7 +15,7 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    const sections = ['home', 'about', 'portfolio', 'contact'];
+    const sections = ['home', 'about', 'portfolio', 'experience', 'contact'];
 
     if (offset > lastScrollY && offset > 100) {
       setScrolled(false);
@@ -45,7 +45,6 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
   }, [lastScrollY]);
 
   useEffect(() => {
-    console.log('current scroll', lastScrollY);
     if (lastScrollY === 0) {
       setScrolled(true);
     }
