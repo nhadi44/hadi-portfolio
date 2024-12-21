@@ -2,6 +2,8 @@
 import localFont from 'next/font/local';
 import React, { useEffect, useState } from 'react';
 import { Navbar } from '../navbar';
+import { Offcanvas } from '@/app/components/offcanvas';
+import { FooterComponent } from '@/app/components/footer';
 
 const poppins = localFont({
   src: [
@@ -97,6 +99,8 @@ export const DefaultLayout = ({
 }: Readonly<{ children: React.ReactNode }>) => {
   const [darkMode, setDarkMode] = useState(false);
 
+  // const counter = useAppSelector((state) => state.counter.value);
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedMode = localStorage.getItem('theme');
@@ -123,8 +127,10 @@ export const DefaultLayout = ({
     <body
       className={`${poppins.className} antialiased ${darkMode ? 'dark' : 'light'}`}>
       <div className="dark:bg-slate-900 dark:text-white transition-all duration-500 min-h-screen">
+        <Offcanvas />
         <Navbar NightModeToggle={toggleDarkMode} DarkMode={darkMode} />
         <main>{children}</main>
+        <FooterComponent />
       </div>
     </body>
   );

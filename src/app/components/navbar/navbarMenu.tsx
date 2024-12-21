@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { MoonIcon } from '../icons/dark';
 import { SunIcon } from '../icons/sun';
+import { Menu } from '@/app/components/icons/menu';
+import { useAppDispatch } from '@/libs/hook';
+import { openOffcanvas } from '@/libs/features/offcanvasSlice';
 
 type NavbarMenuProps = {
   NightModeToggle: () => void;
@@ -8,14 +11,18 @@ type NavbarMenuProps = {
   ActiveSection: string;
 };
 
-export const NavbarMenu = ({
-  DarkMode,
-  NightModeToggle,
-  ActiveSection,
-}: NavbarMenuProps) => {
+export const NavbarMenu = (
+  {
+    DarkMode,
+    NightModeToggle,
+    ActiveSection,
+  }: NavbarMenuProps) => {
+
+  const dispatch = useAppDispatch();
+
   return (
     <ul className="flex items-center gap-7 text-[14px]">
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#home'}
           className={
@@ -24,7 +31,7 @@ export const NavbarMenu = ({
           Home
         </Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#about'}
           className={
@@ -33,7 +40,7 @@ export const NavbarMenu = ({
           About Me
         </Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#portfolio'}
           className={
@@ -42,7 +49,7 @@ export const NavbarMenu = ({
           Porfolio
         </Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#experience'}
           className={
@@ -51,19 +58,19 @@ export const NavbarMenu = ({
           My Experience
         </Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#contact'}
           className={
             ActiveSection === 'contact' ? 'text-blue-400 font-semibold' : ''
           }>
-          Contact Me
+          Contact
         </Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link href={'#'}>My Blog</Link>
       </li>
-      <li>
+      <li className="hidden lg:block">
         <Link
           href={'#'}
           className="bg-blue-500 px-5 py-2 rounded-md text-white hover:bg-blue-600 transition duration-100 ease-in">
@@ -80,6 +87,11 @@ export const NavbarMenu = ({
             )}
           </button>
         </Link>
+      </li>
+      <li className="flex items-center lg:hidden">
+        <button onClick={() => dispatch(openOffcanvas())}>
+          <Menu property={{ className: 'size-6' }} />
+        </button>
       </li>
     </ul>
   );

@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -20,15 +20,58 @@ import { TailwindIcon } from '../icons/tools/tailwind';
 import { VscodeIcon } from '../icons/tools/vscode';
 
 export const FrameworksAndTools: React.FC = () => {
+  const [currentWidth, setCurrentWidth] = useState<number>(0);
+  const [config, setConfig] = useState({
+    spaceBetween: 50,
+    slidesPerView: 8,
+    imageWidth: '4em',
+    imageHeight: '4em',
+  });
+
+  useEffect(() => {
+    setCurrentWidth(window.innerWidth);
+    if (currentWidth <= 425) {
+      console.log('Mobile');
+      setConfig({
+        spaceBetween: 2,
+        slidesPerView: 4,
+        imageWidth: '2em',
+        imageHeight: '2em',
+      });
+    } else if (currentWidth <= 768) {
+      console.log('Tablet');
+      setConfig({
+        spaceBetween: 8,
+        slidesPerView: 5,
+        imageWidth: '2.5em',
+        imageHeight: '2.5em',
+      });
+    } else {
+      console.log('Desktop');
+      setConfig({
+        spaceBetween: 50,
+        slidesPerView: 8,
+        imageWidth: '4em',
+        imageHeight: '4em',
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      setCurrentWidth(window.innerWidth);
+    });
+  }, [currentWidth]);
+
+  console.log(currentWidth);
+
   return (
     <>
-      <h1 className="text-center mb-20 font-semibold text-blue-500 text-xl uppercase">
+      <h1 className="text-center mb-7  lg:mb-20 font-semibold text-blue-500 text-xl uppercase">
         Frameworks & Tools
       </h1>
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={50}
-        slidesPerView={8}
+        spaceBetween={config.spaceBetween}
+        slidesPerView={config.slidesPerView}
         autoplay={{
           delay: 2000, // Delay between transitions (in milliseconds)
           disableOnInteraction: false, // Autoplay will not be disabled after user interactions
@@ -37,49 +80,124 @@ export const FrameworksAndTools: React.FC = () => {
         effect="fade"
         loop={true}>
         <SwiperSlide>
-          <NextjsIcon property={{ width: '4em', height: '4em' }} />
+          <NextjsIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <NodejsIcon property={{ width: '4em', height: '4em' }} />
+          <NodejsIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <LaravelIcon property={{ width: '4em', height: '4em' }} />
+          <LaravelIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <NuxtjsIcon property={{ width: '4em', height: '4em' }} />
+          <NuxtjsIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <TailwindIcon property={{ width: '4em', height: '4em' }} />
+          <TailwindIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SassIcon property={{ width: '4em', height: '4em' }} />
+          <SassIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <BootstrapIcon property={{ width: '4em', height: '4em' }} />
+          <BootstrapIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <DockerIcon property={{ width: '4em', height: '4em' }} />
+          <DockerIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <JiraIcon property={{ width: '4em', height: '4em' }} />
+          <JiraIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <MysqlIcon property={{ width: '4em', height: '4em' }} />
+          <MysqlIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <OracleIcon property={{ width: '4em', height: '4em' }} />
+          <OracleIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <PostgresIcon property={{ width: '4em', height: '4em' }} />
+          <PostgresIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <PrismajsIcon property={{ width: '4em', height: '4em' }} />
+          <PrismajsIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SequelizeIcon property={{ width: '4em', height: '4em' }} />
+          <SequelizeIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <VscodeIcon property={{ width: '4em', height: '4em' }} />
+          <VscodeIcon
+            property={{
+              width: config.imageWidth,
+              height: config.imageHeight,
+            }}
+          />
         </SwiperSlide>
       </Swiper>
     </>

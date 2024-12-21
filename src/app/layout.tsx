@@ -1,3 +1,4 @@
+import StoreProvider from '@/app/StoreProvider';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
@@ -39,11 +40,13 @@ export default function RootLayout({
         href="/assets/favicon/favicon-16x16.png"
       />
       <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-      <DefaultLayout>
-        <SpeedInsights />
-        <Analytics />
-        {children}
-      </DefaultLayout>
+      <StoreProvider>
+        <DefaultLayout>
+          <SpeedInsights />
+          <Analytics />
+          {children}
+        </DefaultLayout>
+      </StoreProvider>
     </html>
   );
 }

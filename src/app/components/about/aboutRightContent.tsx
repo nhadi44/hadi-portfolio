@@ -4,7 +4,7 @@ import { Progress } from '../partials/progress';
 
 export const AboutRightContent = () => {
   return (
-    <div className="col-span-6 flex flex-col justify-center px-8">
+    <div className="lg:col-span-6 lg:flex lg:flex-col lg:justify-center lg:px-8 mt-10 lg:mt-0">
       <Progress
         props={{
           title: 'HTML & CSS',

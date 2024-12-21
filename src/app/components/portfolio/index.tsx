@@ -6,7 +6,7 @@ export const Portfolio = () => {
       <h1 className="text-blue-500 dark:text-white text-center mb-14 font-semibold text-xl uppercase">
         My Projects
       </h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid lg:grid-cols-4 lg:gap-4">
         <PortfolioCard />
         <PortfolioCard />
         <PortfolioCard />

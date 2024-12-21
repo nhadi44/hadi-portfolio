@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 export const ConnectWithMe = () => {
   return (
-    <div className="flex items-center gap-5">
-      <h4 className="text-xl uppercase">Connect with me</h4>
-      <ul className="flex items-center gap-5">
+    <div className="hidden lg:flex lg:items-center lg:gap-5">
+      <h4 className="text-lg lg:text-xl uppercase mb-3">Connect with me</h4>
+      <ul className="flex items-center justify-between gap-4">
         <li>
           <Tooltip content={'Facebook'} placement={'bottom'}>
             <Link href={'#'} target="_blank">

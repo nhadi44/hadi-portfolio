@@ -1,5 +1,7 @@
 'use client';
 
+import { Badges } from '@/app/components/partials/badges';
+
 interface TimeLineItemData {
   id: number;
   title: string;
@@ -33,22 +35,27 @@ export const TimeLineItems = ({ data }: TimelineProps) => {
           <h3 className="flex items-center mb-2 text-lg font-semibold text-gray-900 dark:text-white">
             {item.title}
           </h3>
-          <time className="block mb-4 text-[14px] font-normal leading-none text-gray-400 dark:text-slate-400">
+          <time className="block mb-4 text-[12px] lg:text-[14px] font-normal leading-none text-gray-400 dark:text-slate-400">
             {item.date}
           </time>
           <div
-            className="mb-4 text-base font-normal text-gray-500 dark:text-gray-300"
+            className="mb-4 text-[13px] lg:text-base font-normal text-gray-500 dark:text-gray-300"
             dangerouslySetInnerHTML={{ __html: item.description }}></div>
-          <div className="flex items-center space-x-2 text-slate-400 text-sm">
-            <span>Next.js</span>
-            <span className="text-gray-400">•</span>
-            <span>Laravel</span>
-            <span className="text-gray-400">•</span>
-            <span>React</span>
-            <span className="text-gray-400">•</span>
-            <span>Node.js</span>
-            <span className="text-gray-400">•</span>
-            <span>Tailwind CSS</span>
+          <div className="flex flex-wrap gap-1">
+            {[...Array(5)].map((_, i) => (
+              <Badges
+                key={i}
+                data={{
+                  text: `Next.js ${i + 1}`,
+                  backgroundColor: 'bg-red-500',
+                  color: 'text-white',
+                  fontSize: 'text-[11px] lg:text-xs',
+                  fontWeight: 'font-light',
+                  darkBackgroundColor: 'dark:bg-red-900',
+                  darkColor: 'dark:text-red-300',
+                }}
+              />
+            ))}
           </div>
         </li>
       ))}

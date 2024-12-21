@@ -52,7 +52,7 @@ export const Navbar = ({ NightModeToggle, DarkMode }: NavbarProps) => {
 
   return (
     <header
-      className={`fixed w-full transition-all duration-300 ease-in-out z-50 ${
+      className={`fixed w-full transition-all duration-300 ease-in-out z-10 ${
         scrolled ? 'translate-y-0' : '-translate-y-full'
       } dark:bg-slate-950 bg-white dark:text-white text-slate-900 shadow-lg`}>
       <nav

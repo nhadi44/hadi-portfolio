@@ -11,7 +11,7 @@ export const PortfolioCard = () => {
 
   return (
     <div
-      className="w-full h-80 bg-cover bg-center shadow-xl shadow-slate-800/50 rounded-sm relative group cursor-pointer"
+      className="w-full h-64 bg-cover bg-center shadow-xl shadow-slate-800/50 rounded-sm relative group cursor-pointer"
       style={{ backgroundImage: `url(${testImage})` }}>
       <div
         className="bg-blue-500/80 dark:bg-slate-800/80 absolute w-full bottom-0 px-4 py-6 transition-all duration-300 group-hover:bg-blue-500/90 dark:group-hover:bg-slate-800/90">

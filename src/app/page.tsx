@@ -1,15 +1,15 @@
 import React from 'react';
-import { About } from './components/about';
-import { ContactMe } from './components/contactMe';
 import { Hero } from './components/hero';
-import { MyExperience } from './components/myExperience';
-import { Portfolio } from './components/portfolio';
+import { About } from '@/app/components/about';
+import { Portfolio } from '@/app/components/portfolio';
+import { MyExperience } from '@/app/components/myExperience';
+import { ContactMe } from '@/app/components/contactMe';
 
 export default function Home(): React.ReactElement {
   return (
     <>
-      <section className="h-screen pt-[3rem]" id="home">
-        <div className="h-[calc(100vh-3rem)] max-w-[90%] mx-auto p-10">
+      <section className="h-screen w-full pt-[12rem] lg:pt-[3rem]" id="home">
+        <div className="lg:h-[calc(100vh-3rem)] w-full lg:max-w-[90%] mx-auto p-10">
           <Hero />
         </div>
       </section>
